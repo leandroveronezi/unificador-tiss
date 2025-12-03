@@ -1,0 +1,11 @@
+name: gerador_tiss
+description: Script para unificar XSDs TISS.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.9.2
+
+# Adicionando o pacote de lints padrão para ver se ele reclama de algo
+dev_dependencies:
+  lints: ^3.0.0

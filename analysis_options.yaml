@@ -1,0 +1,10 @@
+include: package:lints/recommended.yaml
+
+linter:
+  rules:
+    # Obriga a usar vírgula (ajuda a manter a quebra)
+    - require_trailing_commas
+
+formatter:
+  trailing_commas: preserve
+  page_width: 120
