@@ -105,11 +105,11 @@ void main() async {
     bufferFinal.writeln('</${prefixoSchema}schema>');
 
     // Salvar
-    final fileOut = File('$diretorioArquivos/$arquivoSaida');
+    final fileOut = File('./$arquivoSaida');
     await fileOut.writeAsString(bufferFinal.toString(), encoding: latin1);
 
     print('---------------------------------------------------------');
-    print('SUCESSO! Arquivo gerado: $diretorioArquivos/$arquivoSaida');
+    print('SUCESSO! Arquivo gerado: $arquivoSaida');
   } catch (e) {
     print('ERRO CRÍTICO: $e');
   }
